@@ -7,7 +7,7 @@ import NoExiste from './paginas/NoExiste';
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Encabezado />
       <main>
         <Routes>
