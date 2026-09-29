@@ -4,6 +4,7 @@ import Inicio from './paginas/Inicio';
 import Servicios from './paginas/Servicios';
 import Contacto from './paginas/Contacto';
 import NoExiste from './paginas/NoExiste';
+import FormularioContacto from './componentes/FormularioConctacto';
 
 export default function App() {
   return (
@@ -16,7 +17,9 @@ export default function App() {
           <Route path="/servicios" element={<Servicios />} />
           <Route path="/contacto" element={<Contacto />} />
           <Route path="*" element={<NoExiste />} />
+          
         </Routes>
+
       </main>
     </BrowserRouter>
   );
