@@ -1,0 +1,35 @@
+.tarjeta-tecnologia {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tarjeta-tecnologia img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+  }
+  
+  .tarjeta-tecnologia h2 {
+    margin: 15px 0 10px;
+  }
+  
+  .tarjeta-tecnologia p {
+    font-size: 15px;
+  }
+  .contenedor-tecnologias {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 800px;
+    margin: 30px auto;
+  }
+  
+  @media (max-width: 600px) {
+    .contenedor-tecnologias {
+      grid-template-columns: 1fr;
+    }
+  }

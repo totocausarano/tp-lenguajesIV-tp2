@@ -1,0 +1,34 @@
+.contenedor-contacto {
+    display: flex;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 20px;
+    align-items: flex-start;
+  }
+  
+  .seccion-formulario {
+    flex: 1;
+    min-width: 0;
+  }
+  
+  .mapa-contacto {
+    flex: 1;
+    min-width: 0;
+  }
+  
+  .mapa-contacto iframe {
+    width: 100%;
+  }
+  
+  /* Adaptación para celulares */
+  @media (max-width: 768px) {
+    .contenedor-contacto {
+      flex-direction: column;
+    }
+  
+    .seccion-formulario,
+    .mapa-contacto {
+      width: 100%;
+    }
+  }
